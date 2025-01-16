@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="stylesheet" href="Foodshop.css">
+</head>
+<body>
+    <header>
+        <img src="store logo.jpg" alt="Food Store Logo">
+        <h1>Welcome to the Food Store</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Fresh Apples">
+            <h3>Fresh Apples</h3>
+            <p>$2.99 per kg</p>
+            <button class="add-to-cart" data-product="Fresh Apples" data-price="2.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Organic Bananas">
+            <h3>Organic Bananas</h3>
+            <p>$1.29 per kg</p>
+            <button class="add-to-cart" data-product="Organic Bananas" data-price="1.29">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Whole Grain Bread.jpg" alt="Whole Grain Bread">
+            <h3>Whole Grain Bread</h3>
+            <p>$3.49 each</p>
+            <button class="add-to-cart" data-product="Whole Grain Bread" data-price="3.49">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="fresh carrot.jpg" alt="Fresh Carrots">
+            <h3>Fresh Carrots</h3>
+            <p>$1.50 per kg</p>
+            <button class="add-to-cart" data-product="Fresh Carrots" data-price="1.50">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="juicy kiwi.jpg" alt="Juicy Kiwis">
+            <h3>Juicy Kiwis</h3>
+            <p>$2.99 per kg</p>
+            <button class="add-to-cart" data-product="Juicy Kiwis" data-price="2.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="fresh-strawberries.jpg" alt="Fresh Strawberries">
+            <h3>Fresh Strawberries</h3>
+            <p>$4.99 per kg</p>
+            <button class="add-to-cart" data-product="Fresh Strawberries" data-price="4.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="orange.jpg" alt="Fresh Oranges">
+            <h3>Fresh Oranges</h3>
+            <p>$3.50 per kg</p>
+            <button class="add-to-cart" data-product="Fresh Oranges" data-price="3.50">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Food Store. All rights reserved.</p>
+        <p>Contact us: <a href="https://www.facebook.com/Thun.Thun6010012" style="color: #0af;">Facebook</a> | Phone: (855) 69600987</p>
+    </footer>
+
+    <div class="cart" id="cart">
+        <span>Cart</span>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+    <!-- Pop-up screen for cart -->
+    <div class="cart-popup" id="cart-popup">
+        <div class="cart-popup-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items-list"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button class="close-popup" id="close-popup">Close</button>
+        </div>
+    </div>
+</body>
+</html>
